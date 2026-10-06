@@ -1,0 +1,13 @@
+{
+  "scenario": "Synthetic empty-field observation",
+  "action": {
+    "farmer": [
+      "PLANT",
+      "WHEAT"
+    ],
+    "hands": [],
+    "market": []
+  },
+  "verification": "PASS",
+  "scope": "Decision-rule smoke check only; no win-rate claim."
+}

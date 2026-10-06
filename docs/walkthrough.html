@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Kaggriculture decision walkthrough</title><style>body{background:#ecf1e7;color:#17382e;font:17px/1.7 system-ui;margin:0}main{max-width:1050px;margin:70px auto;padding:40px;background:white;border-radius:16px}h1{font-size:42px;line-height:1.2}small{letter-spacing:2px;color:#528268}.grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}section{padding:25px;background:#f0f4ee;border-radius:10px}pre{background:#17382e;color:#daf0cd;padding:22px;border-radius:9px;font-size:17px}footer{color:#677469;font-size:14px}.pass{color:#26714c;font-weight:700}</style></head><body><main><small>CODE WALKTHROUGH / SYNTHETIC OBSERVATION</small><h1>Prioritize the next action.<br>Protect the resource budget.</h1><p>Rule-based farming agent · Python · priority tasks · greedy assignment · constrained market orders</p><div class="grid"><section><h2>Input scenario</h2><ul><li>Empty 10 × 10 field</li><li>Farmer at (0, 0); no hired workers</li><li>100 money; one wheat seed</li><li>Day 1, hour 0; empty inventory</li></ul><p>The existing seed enables planting. The reserve purchase threshold keeps this low-cash state from buying more.</p></section><section><h2>Actual returned action</h2><pre>{
+  &quot;farmer&quot;: [
+    &quot;PLANT&quot;,
+    &quot;WHEAT&quot;
+  ],
+  &quot;hands&quot;: [],
+  &quot;market&quot;: []
+}</pre><p class="pass">PASS — assertions verified by demo_agent.py</p></section></div><footer><p>This is an actual decision-rule smoke check on a synthetic observation, not a full game replay or win-rate/leaderboard result.</p><p>Run: python demo_agent.py</p></footer></main></body></html>
